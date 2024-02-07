@@ -1,0 +1,22 @@
+env:
+  node: true
+extends:
+  - "eslint:recommended"
+  - "plugin:@typescript-eslint/recommended"
+  - "prettier"
+  - "plugin:sonarjs/recommended"
+ignorePatterns:
+  - "node_modules"
+  - "dist"
+  - "lib"
+  - "configs"
+plugins:
+  - "@typescript-eslint"
+rules:
+  quotes:
+    - error
+    - double
+  semi:
+    - error
+    - never
+  no-console: 2

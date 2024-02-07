@@ -33,6 +33,7 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.11.16",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "eslint": "^8.56.0",
