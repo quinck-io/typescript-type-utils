@@ -23,8 +23,8 @@
     "lib/**/*"
   ],
   "scripts": {
-    "lint": "eslint src/ test/",
-    "lint:fix": "eslint src/ test/ --fix",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
     "build": "tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
