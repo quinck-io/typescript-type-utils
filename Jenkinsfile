@@ -13,9 +13,9 @@ pipeline {
     disableConcurrentBuilds()
   }
   
-  environment {
-    // DISCORD_WEBHOOK_URL = ''
-  }
+  // environment {
+  //   // DISCORD_WEBHOOK_URL = ''
+  // }
 
   stages {
 
