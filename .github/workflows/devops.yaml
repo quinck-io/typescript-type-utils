@@ -52,7 +52,7 @@ jobs:
                   webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
                   status: ${{ job.status }}
                   projectName: ${{ env.PROJECT_NAME }}
-                  sonarUrl: https://sonarcloud.io/summary/new_code?id=quinck-io_typescript-types-utils&branch=${{ github.ref_name }}
+                  sonarUrl: https://sonarcloud.io/summary/new_code?id=quinck-io_typescript-type-utils&branch=${{ github.ref_name }}
                   sonarQualityGateStatus: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}
 
     publish:
@@ -78,7 +78,7 @@ jobs:
               run: |
                   echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
-                  PUBLISHED_VERSION=$(npm show @quinck/types-utils version)
+                  PUBLISHED_VERSION=$(npm show @quinck/type-utils version)
                   PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
                   if [ "${PUBLISHED_VERSION}" = "${PACKAGE_VERSION}" ]; then
                     echo "The current package version has already been published"
