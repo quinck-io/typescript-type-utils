@@ -1,45 +1,45 @@
 {
-  "name": "@quinck/type-utils",
-  "version": "0.2.0",
-  "description": "Tyescript type utils",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/Quinck/type-utils.git"
-  },
-  "keywords": [
-    "typescript",
-    "type",
-    "utils"
-  ],
-  "author": {
-    "name": "Stefano Righini",
-    "email": "stefano.righini@quinck.io"
-  },
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/Quinck/type-utils#readme",
-  "files": [
-    "lib/**/*"
-  ],
-  "scripts": {
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
-    "build": "tsc",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags"
-  },
-  "devDependencies": {
-    "@tsconfig/node20": "^20.1.2",
-    "@types/node": "^20.11.16",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-sonarjs": "^0.23.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
-  }
+    "name": "@quinck/type-utils",
+    "version": "0.2.0",
+    "description": "Tyescript type utils",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/quinck-io/typescript-type-utils.git"
+    },
+    "keywords": [
+        "typescript",
+        "type",
+        "utils"
+    ],
+    "author": {
+        "name": "Stefano Righini",
+        "email": "stefano.righini@quinck.io"
+    },
+    "license": "ISC",
+    "homepage": "https://github.com/quinck-io/typescript-type-utils/blob/master/README.md",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "lint": "eslint src/",
+        "lint:fix": "eslint src/ --fix",
+        "build": "tsc",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm run lint",
+        "preversion": "npm run lint",
+        "version": "git add -A src",
+        "postversion": "git push && git push --tags"
+    },
+    "devDependencies": {
+        "@tsconfig/node20": "^20.1.2",
+        "@types/node": "^20.11.16",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-sonarjs": "^0.23.0",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3"
+    }
 }
