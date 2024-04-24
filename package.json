@@ -1,6 +1,6 @@
 {
     "name": "@quinck/type-utils",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Tyescript type utils",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
